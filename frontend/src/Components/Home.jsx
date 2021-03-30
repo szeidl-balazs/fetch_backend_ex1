@@ -12,6 +12,7 @@ const Home = () => {
 			console.log('json is:')
 			console.log(json);
 			setData(json.product);
+			console.log(data[0].yield.Sopron[0]);
 		});
 		
 	}, [])
@@ -20,12 +21,12 @@ const Home = () => {
 	console.log(data);
 
 	console.log('data element property is:');
-	/*console.log(data[0].name);*/
+	
 
 	return (
 		<div>
 			<p>Próba</p>
-			<p>{data[0].name}</p>
+			<p>{data[0].yield.Sopron[0]}</p>
 			
 		</div>
 	)

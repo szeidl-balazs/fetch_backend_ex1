@@ -1,13 +1,16 @@
 {
 	"product": [
 		{
-			"márka": "LG",
-			"név": "LG 31.330 DORADO",
+			"brand": "LG",
+			"name": "LG 31.330 DORADO",
 			"FAO": "330",
-			"éréscsoport": "korai",
-			"aszály gén": "HYDRANEO",
-			"kiemelt tulajdonságok": ["kiváló szemminőség", "nagy hektoliter tömeg", "nagyon jó szárazságtűrés", "nagyon jó évjárat és termőhely stabilitás", "kiváló cső- és száregészség"]
-			
+			"maturity group": "korai",
+			"trait": "HYDRANEO",
+			"properties": ["kiváló szemminőség", "nagy hektoliter tömeg", "nagyon jó szárazságtűrés", "nagyon jó évjárat és termőhely stabilitás", "kiváló cső- és száregészség"],
+			"yield": {
+				"Sopron": [8.2, 9.7, 10.3],
+				"Komárom": [9.2, 7.7, 11.3]
+			} 
 		},
 		{}
 	]
