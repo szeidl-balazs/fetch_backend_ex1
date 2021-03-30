@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import LoadingMask from './LoadingMask';
 import Product from './Product';
 import { v4 as uuidv4 } from "uuid";
+import '../App.css';
 
 const ProductList = () => {
 
@@ -10,27 +11,31 @@ const ProductList = () => {
 
 	useEffect(() => {
 		fetch('http://localhost:8000/')
-		.then(response => response.json())
-		.then(json => {
-			console.log('json is:')
-			console.log(json);
-			setData(json.product);
+		.then((response) => response.json())
+		.then((data) => {			
+			setData(data.products);
+			
 			setIsLoaded(true);  
 		});
 		
-	}, [])
-
-	console.log('data is:');
-	console.log(data);
-
-	console.log('data element property is:');
-	/*	{isLoaded ? data.map((item, index) => <Product key={uuidv4} brand={item.brand} name={item.name} />) : <LoadingMask />}*/
-	/*{isLoaded ? <p>hello</p> : <LoadingMask />}*/			
-	return (
-		<div>
-			<p>Termékek</p>
+	}, []);
 		
-			{isLoaded ? data.map((item) => <Product key={uuidv4} brand={item.brand} name={item.name} />) : <LoadingMask />}
+	let features = data.map((item) => item.features);
+	
+	return (
+		<div className="productlist-container">
+			{isLoaded ? data.map((item) => 
+				<Product 
+				key={uuidv4()} 
+				brand={item.brand} 
+				name={item.name}
+				fao={item.FAO} 
+				maturitygroup={item.maturitygroup}
+				trait={item.trait}	
+				features={features.map((feature) => feature)}			
+				/>)		
+				: <LoadingMask />}
+		
 		</div>
 	)
 };

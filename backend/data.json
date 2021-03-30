@@ -1,19 +1,19 @@
 {
-	"product": [
+	"products": [
 		{
 			"brand": "LG",
 			"name": "LG 31.330 DORADO",
 			"FAO": "330",
-			"maturity group": "korai",
+			"maturitygroup": "korai",
 			"trait": "HYDRANEO",
-			"properties": ["kiváló szemminőség", "nagy hektoliter tömeg", "nagyon jó szárazságtűrés", "nagyon jó évjárat és termőhely stabilitás", "kiváló cső- és száregészség"]
+			"features": ["kiváló szemminőség", "nagy hektoliter tömeg", "nagyon jó szárazságtűrés", "nagyon jó évjárat és termőhely stabilitás", "kiváló cső- és száregészség"]
 		},
 		{"brand": "LG",
 			"name": "LG 31.390 PHALANX",
 			"FAO": "390",
-			"maturity group": "korai",
+			"maturitygroup": "korai",
 			"trait": "HYDRANEO",
-			"properties": ["nagy termőképesség", "nagyon jó szárazságtűrés", "nagyon jó kezdeti fejlődés", "gyors vízleadás"]
+			"features": ["nagy termőképesség", "nagyon jó szárazságtűrés", "nagyon jó kezdeti fejlődés", "gyors vízleadás"]
 		}
 	]
 }
