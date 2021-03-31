@@ -12,7 +12,7 @@ const ProductTableHeader = () => {
 				<div>Éréscsoport</div>
 				<div>Kiemelt tulajdonság</div>
 				<div>Jellemzők</div>
-				<div>Felhasználói előnyök</div>
+				<div>Felhasználói előnyök, ajánlás</div>
 		</div>
 	)
 };

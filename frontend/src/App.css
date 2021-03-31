@@ -53,11 +53,20 @@
 }
 
 .App .productTable-cont .productTableHeader-cont > div {
+  background-color: #e30030;
+  color: #ffffff;
+  -webkit-box-shadow: 2.5px 5px black;
+          box-shadow: 2.5px 5px black;
+  font-weight: 800;
   padding: 5px 5px;
 }
 
 .App .productTable-cont .product-container {
-  border: 1px solid black;
+  /*border: 1px solid black;*/
+  background-color: #e30030;
+  color: #ffffff;
+  -webkit-box-shadow: 2.5px 5px black;
+          box-shadow: 2.5px 5px black;
   margin-top: 25px;
   width: 90vw;
   display: -ms-grid;
@@ -67,7 +76,7 @@
 }
 
 .App .productTable-cont .product-container > div {
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   padding: 5px;
 }
 
