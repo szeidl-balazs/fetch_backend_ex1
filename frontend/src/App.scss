@@ -16,13 +16,22 @@
 
 	h1 {
 		margin: 25px;
+		
 	}
 
 	.productTable-cont {
-		display: grid;
+		display: flex;
 		flex-direction: column;
-		justify-content: space-around;
-		align-items: space-aorund;
+		justify-content: center;
+		align-items: center;
+
+		.searchbar {
+			margin: 15px;
+			padding: 5px;
+			width: 500px;
+			border-radius: 5px;
+			box-shadow: 2.5px 5px black;
+		}
 
 		.productTableHeader-cont {
 			border: 1px solid black;

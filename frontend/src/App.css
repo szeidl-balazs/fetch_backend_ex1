@@ -30,17 +30,28 @@
 }
 
 .App .productTable-cont {
-  display: -ms-grid;
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: space-aorund;
-      -ms-flex-align: space-aorund;
-          align-items: space-aorund;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.App .productTable-cont .searchbar {
+  margin: 15px;
+  padding: 5px;
+  width: 500px;
+  border-radius: 5px;
+  -webkit-box-shadow: 2.5px 5px black;
+          box-shadow: 2.5px 5px black;
 }
 
 .App .productTable-cont .productTableHeader-cont {
