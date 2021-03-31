@@ -3,18 +3,43 @@
 		{
 			"brand": "LG",
 			"name": "LG 31.330 DORADO",
-			"FAO": "330",
+			"utilization": "szemes",
+			"fao": "330",
 			"maturitygroup": "korai",
 			"trait": "HYDRANEO",
-			"features": ["kiváló szemminőség", "nagy hektoliter tömeg", "nagyon jó szárazságtűrés", "nagyon jó évjárat és termőhely stabilitás", "kiváló cső- és száregészség"]
+			"features": ["kiváló szemminőség", "nagy hektoliter tömeg", "nagyon jó szárazságtűrés", "nagyon jó évjárat és termőhely stabilitás", "kiváló cső- és száregészség"],
+			"benefits": ["nagy termőképességű hibridet keresnek a korai éréscsoport elejéről, amely szárazságban is stabil", "alapvetően korán szeretnek betakarítani, de ha hosszabb ideig kint marad a kukorica, az sem okoz terméscsökkenést, illetve minőségromlást"]
 		},
 		{"brand": "LG",
 			"name": "LG 31.390 PHALANX",
-			"FAO": "390",
+			"utilization": "szemes",
+			"fao": "390",
 			"maturitygroup": "korai",
 			"trait": "HYDRANEO",
-			"features": ["nagy termőképesség", "nagyon jó szárazságtűrés", "nagyon jó kezdeti fejlődés", "gyors vízleadás"]
+			"features": ["nagy termőképesség", "nagyon jó szárazságtűrés", "nagyon jó kezdeti fejlődés", "gyors vízleadás"],
+			"benefits": ["a szárazság hatásának csökkentését a jó agrotechnikai gyakorlat és a hibrid választás kombinációjával oldják meg", "olyan hibridet keresnek, amely meghálálja a kedvező termőhelyi adottságokat", "ugyanakkor jól képes kompenzálni, ha a körülmények kedvezőtlenebbre fordulnak"]
+		},
+		{
+			"brand": "",
+			"name": "",
+			"utilization": "szemes",
+			"fao": "",
+			"maturitygroup": "",
+			"trait": "",
+			"features": ["", ""],
+			"benefits": ["", ""]
+		},
+		{
+			"brand": "",
+			"name": "",
+			"utilization": "szemes",
+			"fao": "",
+			"maturitygroup": "",
+			"trait": "",
+			"features": ["", ""],
+			"benefits": ["", ""]
 		}
+
 	]
 }
 

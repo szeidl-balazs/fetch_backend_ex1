@@ -13,29 +13,21 @@ const ProductList = () => {
 		fetch('http://localhost:8000/')
 		.then((response) => response.json())
 		.then((data) => {			
-			setData(data.products);
-			
+			setData(data.products);			
 			setIsLoaded(true);  
 		});
 		
-	}, []);
-		
-	let features = data.map((item) => item.features);
+	}, []);	
 	
 	return (
-		<div className="productlist-container">
-			{isLoaded ? data.map((item) => 
+		<div className="productlist-container">			
+			
+			{isLoaded ? data.map((dataJsonProperty) => 
 				<Product 
 				key={uuidv4()} 
-				brand={item.brand} 
-				name={item.name}
-				fao={item.FAO} 
-				maturitygroup={item.maturitygroup}
-				trait={item.trait}	
-				features={features.map((feature) => feature)}			
+				dataJsonProperty={dataJsonProperty}					
 				/>)		
-				: <LoadingMask />}
-		
+				: <LoadingMask />}		
 		</div>
 	)
 };

@@ -1,18 +1,20 @@
 import React from 'react';
-import ProductFeatures from './ProductFeatures';
+import { v4 as uuidv4 } from "uuid";
 import '../App.css';
 
-const Product = (props) => {
+const Product = ({dataJsonProperty}) => {
 
 	return (
 		<div className="product-container">			
-			<div>{props.brand}</div>
-			<div>{props.name}</div>
-			<div>FAO: {props.fao}</div>
-			<div>Éréscsoport: {props.maturitygroup}</div>
-			<div>Aszály gén: {props.trait}</div>
-			<div>Jellemzők: <ProductFeatures /></div>
-		</div>		
+			<div>{dataJsonProperty.brand}</div>
+			<div>{dataJsonProperty.name}</div>
+			<div>{dataJsonProperty.utilization}</div>
+			<div>{dataJsonProperty.fao}</div>
+			<div>{dataJsonProperty.maturitygroup}</div>
+			<div>{dataJsonProperty.trait}</div>
+			<div className="bulleted-list"><ul>{dataJsonProperty.features.map((feature) => <li key={uuidv4()}>{feature}</li>)}</ul></div>
+			<div className="bulleted-list"><ul>{dataJsonProperty.benefits.map((benefit) => <li key={uuidv4()}>{benefit}</li>)}</ul></div>
+		</div>
 	)
 };
 

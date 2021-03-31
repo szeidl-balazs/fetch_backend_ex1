@@ -18,16 +18,50 @@
 		margin: 25px;
 	}
 
-	.productlist-container {
-		margin-top: 25px;
-		width: 90vw;
-		display: flex;
+	.productTable-cont {
+		display: grid;
 		flex-direction: column;
+		justify-content: space-around;
+		align-items: space-aorund;
+
+		.productTableHeader-cont {
+			border: 1px solid black;
+			width: 90vw;
+			display: grid;
+			grid-template-columns: 5% 10% 7.5% 2.5% 7.5% 10.5% 22% 35%;			
+		}
+
+		.productTableHeader-cont > div {
+			padding: 5px 5px;	
+		}
 
 		.product-container {
-			display: flex;
-			justify-content: space-around;
+			border: 1px solid black;
+			margin-top: 25px;
+			width: 90vw;
+			display: grid;
+			grid-template-columns: 5% 10% 7.5% 2.5% 7.5% 10.5% 22% 35%;
+		
 		}
+
+		.product-container > div {
+			border: 1px solid black;
+			padding: 5px;				
+		}		
+		
+
+		.product-container .bulleted-list {
+			padding: 5px 5px 5px 25px;
+		}
+		
+
 	}
+		
+		
+		
+		
+		
+		
+		
 }
 
