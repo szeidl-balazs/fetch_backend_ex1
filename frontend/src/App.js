@@ -4,6 +4,7 @@ import ProductList from './Components/ProductList';
 import ProductTableHeader from './Components/ProductTableHeader';
 import SearchBar from './Components/SearchBar'
 import SearchList from './Components/SearchList'
+import Filters from './Components/Filters';
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
   return (
     <div className="App">
       <h1>TERMÉKEK</h1>
+      <Filters/>
       <div className="productTable-cont">
         <SearchBar search={search} setSearch={setSearch}/>
         <ProductTableHeader/>
