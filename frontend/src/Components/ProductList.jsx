@@ -4,9 +4,9 @@ import Product from './Product';
 import { v4 as uuidv4 } from "uuid";
 import '../App.css';
 
-const ProductList = () => {
+const ProductList = ({search, data, setData}) => {
 
-		const [data, setData] = useState([]);
+	
 		const [isLoaded, setIsLoaded] = useState(false); 
 
 	useEffect(() => {
@@ -18,7 +18,7 @@ const ProductList = () => {
 		});
 		
 	}, []);	
-	
+	console.log(search);
 	return (
 		<div className="productlist-container">			
 			

@@ -1,4 +1,5 @@
-import React, {useEffect} from 'react';
+import React from 'react';
+
 /*import styled from "styled-components";
 
 	Az input tag a komponens a style componentsben (egy object) van tag formájában előkészítve, onnét van behivatkozva ide
@@ -14,11 +15,11 @@ import React, {useEffect} from 'react';
   `;*/
 
 
-  const SearchBar = ({search, setSearch}) => {
+  const SearchBar = ({setSearch}) => {
 
-    useEffect(() => {    
+    /*useEffect(() => {    
       setSearch(search);
-    }, [search, setSearch]);
+    }, [search, setSearch]);*/
 
     //esemény figyelő a input mező értékeinek a figyelésére
     const onChangeHandler = (event) => {

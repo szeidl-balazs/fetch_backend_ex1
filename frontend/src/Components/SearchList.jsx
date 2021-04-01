@@ -1,5 +1,6 @@
-import React, { /*Component,*/ useState, useEffect } from "react";
-import Card from "./Card.js";
+import React, {useState, useEffect } from "react";
+import Product from './Product';
+import { v4 as uuidv4 } from "uuid";
 
 
 
@@ -10,22 +11,29 @@ const SearchList =({search, data}) => {
   useEffect(() => {
     setResults(data.filter(
       (product) =>
-        product.brand.toLowerCase().includes(search.toLowerCase()) ||
+        {return product.brand.toLowerCase().includes(search.toLowerCase()) ||
       	product.name.toLowerCase().includes(search.toLowerCase()) ||
 				product.utilization.toLowerCase().includes(search.toLowerCase()) ||
 				product.fao.toLowerCase().includes(search.toLowerCase()) ||
 				product.maturitygroup.toLowerCase().includes(search.toLowerCase()) ||
 				product.trait.toLowerCase().includes(search.toLowerCase()) ||
-				product.features.toLowerCase().includes(search.toLowerCase()) ||
-				product.benefits.toLowerCase().includes(search.toLowerCase())
+				product.features.join(" ").toLowerCase().includes(search.toLowerCase()) ||
+				product.benefits.join(" ").toLowerCase().includes(search.toLowerCase())
+        ? product : false}
 	))},[search]);
   
-		console.log(results);
+  
+  console.log(`${data} from product list`);
+	console.log(results);
+
   return (
+    
     <div className="container">
-      {results.map((product, index) => (
-        <Card key={index} product={product} />
-      ))}
+      {results.map((dataJsonProperty) => 
+        <Product 
+        key={uuidv4()} 
+        dataJsonProperty={dataJsonProperty}					
+        />)}
     </div>
   );
 }
