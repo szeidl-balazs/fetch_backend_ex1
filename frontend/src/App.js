@@ -4,17 +4,18 @@ import ProductList from './Components/ProductList';
 import ProductTableHeader from './Components/ProductTableHeader';
 import SearchBar from './Components/SearchBar'
 import SearchList from './Components/SearchList'
-import Filters from './Components/Filters';
+import MaturityFilter from './Components/MaturityFilter';
 
 function App() {
 
   const [search, setSearch] = useState("");
   const [data, setData] = useState([]);
+  
   /*<BrandFilterList data={data} setData={setData}/>*/
   return (
     <div className="App">
       <h1>TERMÉKEK</h1>
-      <Filters/>
+      <MaturityFilter search={search} data={data} setSearch={setSearch} setData={setData} />
       <div className="productTable-cont">
         <SearchBar search={search} setSearch={setSearch}/>
         <ProductTableHeader/>

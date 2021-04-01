@@ -23,8 +23,8 @@ const SearchList =({search, data}) => {
 	))},[search]);
   
   
-  console.log(`${data} from product list`);
-	console.log(results);
+  /*console.log(`${data} from product list`);
+	console.log(results);*/
 
   return (
     

@@ -31,7 +31,7 @@
 			"maturitygroup": "közép-korai",
 			"trait": "HYDRANEO",
 			"features": ["kiváló termőképesség", "jó szárazságtűrés", "nagyon jó kezdeti fejlődés", "nagyon jó cső- és száregészség", "gyors vízleadás"],
-			"benefits": ["jó, vagy átlagos termőhelyi adottságok között gazdálkodik és a nagy termés elérése mellett a termésbiztonság is fontos számára", "területein az elérhető termésszintet kis vagy közepes mértékben befolyásolja az évjárat", "a vetés korai kezdéséhez keres arra alkalmas, középérésű hibridet"]
+			"benefits": ["jó, vagy átlagos termőhelyi adottságok között gazdálkodik és a nagy termés elérése mellett a termésbiztonság is fontos számára", "területein az elérhető termésszintet kis vagy közepes mértékben befolyásolja az évjárat", "a vetés korai kezdéséhez keres arra alkalmas, közép-korai érésű hibridet"]
 		},
 		{
 			"crop": "kukorica",

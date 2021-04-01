@@ -29,7 +29,7 @@ import React from 'react';
     //input mező szabadszavas kereséshez, a komponens a style componentsben (egy object) van tag formájában előkészítve, onnét van behivatkozva ide
     return (
       <div>
-        <input className="searchbar" onChange={onChangeHandler} autoFocus /> 
+        <input className="searchbar" onChange={onChangeHandler} autoFocus placeholder="Írja be a keresett tulajdonságot!"/> 
       </div>
     );
 
