@@ -1,20 +1,18 @@
 import React from 'react';
 
+const FilterMaturity = ({setSearch, dataJsonProperty, setMaturity}) => {
 
-const MaturityFilter = ({search, setSearch, dataJsonProperty}) => {
-
-	/*const [maturity, setMaturity] = useState([]);*/
-
+	/*setSearch(event.target.value);*/
+	
 	const onChangeHandler = (event) => {
 		if (event.target.value !== "összes") {
-			setSearch(event.target.value);
+			
+			setMaturity(event.target.value);
 		}	else {
 			setSearch(dataJsonProperty);
 		}
 	}
-
-	console.log(`selected maturity: ${search}`);
-
+	
 	return (
 		<div>
 			<label>Éréscsoport</label>
@@ -29,4 +27,4 @@ const MaturityFilter = ({search, setSearch, dataJsonProperty}) => {
 	);
 }
 
-export default MaturityFilter;
+export default FilterMaturity;

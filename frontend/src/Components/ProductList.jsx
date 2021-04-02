@@ -4,7 +4,7 @@ import Product from './Product';
 import { v4 as uuidv4 } from "uuid";
 import '../App.css';
 
-const ProductList = ({search, data, setData}) => {
+const ProductList = ({data, setData}) => {
 
 	
 		const [isLoaded, setIsLoaded] = useState(false); 
@@ -15,17 +15,16 @@ const ProductList = ({search, data, setData}) => {
 		.then((data) => {			
 			setData(data.products);			
 			setIsLoaded(true);  
-		});
-		
-	}, []);	
-	console.log(search);
+		})		
+	},);	
+	
 	return (
 		<div className="productlist-container">			
 			
 			{isLoaded ? data.map((dataJsonProperty) => 
 				<Product 
 				key={uuidv4()} 
-				dataJsonProperty={dataJsonProperty}					
+				dataJsonProperty={dataJsonProperty}								
 				/>)		
 				: <LoadingMask />}		
 		</div>

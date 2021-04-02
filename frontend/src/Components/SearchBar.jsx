@@ -17,10 +17,6 @@ import React from 'react';
 
   const SearchBar = ({setSearch}) => {
 
-    /*useEffect(() => {    
-      setSearch(search);
-    }, [search, setSearch]);*/
-
     //esemény figyelő a input mező értékeinek a figyelésére
     const onChangeHandler = (event) => {
       setSearch(event.target.value);
@@ -32,7 +28,6 @@ import React from 'react';
         <input className="searchbar" onChange={onChangeHandler} autoFocus placeholder="Írja be a keresett tulajdonságot!"/> 
       </div>
     );
-
   } 
 
 	export default SearchBar;
