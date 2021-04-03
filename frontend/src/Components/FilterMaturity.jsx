@@ -1,22 +1,25 @@
 import React from 'react';
 
-const FilterMaturity = ({setSearch, dataJsonProperty, setMaturity}) => {
-
-	/*setSearch(event.target.value);*/
+const FilterMaturity = ({maturity, setSearch, dataJsonProperty, setMaturity}) => {
 	
-	const onChangeHandler = (event) => {
-		if (event.target.value !== "összes") {
-			
+	const maturityChangeHandler = (event) => {
+		if (event.target.value) {			
 			setMaturity(event.target.value);
 		}	else {
 			setSearch(dataJsonProperty);
 		}
 	}
-	
+
+	/*const maturityChangeHandler = (event) => {
+		setMaturity(event.target.value);
+	}*/
+
+
+	console.log(maturity);
 	return (
 		<div>
 			<label>Éréscsoport</label>
-			<select onChange={onChangeHandler}>
+			<select onChange={maturityChangeHandler}>
 				<option value="összes">összes</option>
 				<option value="igen korai">igen korai</option>
 				<option value="korai">korai</option>

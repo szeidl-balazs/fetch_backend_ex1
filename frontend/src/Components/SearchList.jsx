@@ -4,17 +4,10 @@ import { v4 as uuidv4 } from "uuid";
 
 
 
-const SearchList =({search, data, maturity}) => {
+const SearchList =({search, data}) => {
 
   const [results, setResults] = useState([]);
 
-  /*if (maturity !== "összes") {
-    setResults(data.filter(
-      (product) =>
-        {return product.maturitygroup.toLowerCase().includes(search.toLowerCase())
-        ? product : false}))
-
-   console.log(typeof(maturity), maturity);*/   
 
   useEffect(() => 
     setResults(data.filter(
@@ -23,18 +16,15 @@ const SearchList =({search, data, maturity}) => {
       	product.name.toLowerCase().includes(search.toLowerCase()) ||
 				product.utilization.toLowerCase().includes(search.toLowerCase()) ||
 				product.fao.toLowerCase().includes(search.toLowerCase()) ||
-				product.maturitygroup.toLowerCase().includes(search.toLowerCase()) ||
-        product.maturitygroup.toLowerCase().includes(maturity.toLowerCase()) ||
+				product.maturitygroup.toLowerCase().includes(search.toLowerCase()) ||        
 				product.trait.toLowerCase().includes(search.toLowerCase()) ||
 				product.features.join(" ").toLowerCase().includes(search.toLowerCase()) ||
 				product.benefits.join(" ").toLowerCase().includes(search.toLowerCase())
-        ? product : false}
-    )), [search, data, maturity]);  
+        ? product : false}         
+    )), [search, data]);
   
-          console.log(maturity);
 
-  return (
-    
+  return (    
     <div className="container">
       {results.map((dataJsonProperty) => 
         <Product 
